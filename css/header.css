@@ -104,6 +104,10 @@ padding: 20px 5%;
 header{
     padding: 40px 4%;
 }
+header a {
+   color: #ffffff4f;
+   text-decoration: none;
+}
 header > .interface {
     display: flex;
     align-items: center;
@@ -117,10 +121,10 @@ header nav.menu-desktop a:hover {
 }
 header a:hover{
     color: #fff;
-    transform: scale(1.05);
+    transform: scale(1.2);
 
 }
-header nav.menu-desktop ul {
+header nav ul {
     list-style-type: none;
 }
 header nav.menu-desktop ul li {
