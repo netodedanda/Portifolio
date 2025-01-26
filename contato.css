@@ -1,0 +1,73 @@
+/* Estilo geral da seção de redes sociais */
+.social-media {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto; /* Centraliza a seção */
+}
+
+.social-media h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.social-media p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.social-media .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a i {
+    font-size: 2.5rem; 
+    color: #555;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    padding: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-media a span {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.social-media a:hover i {
+    background-color: #0077b5; /* Azul no hover */
+    color: #fff;
+    border-color: #0077b5;
+}
+
+.social-media a:hover span {
+    color: #0077b5;
+}
+
+.social-media a:hover {
+    transform: translateY(-5px); /* Efeito de leve elevação */
+}

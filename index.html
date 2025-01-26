@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>
-        <h1>Paulo Neto</h1>
-        <ul>
-            <li><a href="">INICIO</a></li>
-            <li><a href="">SOBRE MIM</a></li>
-            <li><a href="">PROJETOS</a></li>
-            <li><a href="">EXTRA</a></li>
-        </ul>
+        <div class="container1">
+            <h1>PAULO NETO</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./sobremim.html">SOBRE MIM</a></li>
+                    <li><a href="./projetos.html">PROJETOS</a></li>
+                    <li><a href="./contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+            <a href="contato.html" class="btnContato1">CONTATO</a>
+        </div>
     </header>
 
+
     <div class="container">
-        <div class="bod">
-            <h3>HELLO. MY NAME IS</h3>
-            <h1>PAULO NETO</h1>
-            <h4>VENHA ME CONHECER MELHOR</h4>
-            <button>MY WORK</button>
+        <div class="inverso">
+            <div class="bod">
+                <div class="txt-animado">
+                    <span></span>
+
+                </div>
+                <div>
+                    <a href="contato.html" class="btnContato2">CONTATO</a>
+                    <button class="btn1" onclick="baixarCV()">DOWNLOAD CV</button>
+                </div>
+            </div>
         </div>
-        <img src="./img/eu.jpg" alt="Eu">
+        <img src="./img/eu2.png" alt="Eu">
     </div>
+    <script>
+        function baixarCV() {
+            const link = document.createElement('a');
+            link.href = 'curriculo.pdf';
+            link.download = 'curriculo.pdf';
+            link.click();
+        }
+
+
+    </script>
 </body>
+
 </html>

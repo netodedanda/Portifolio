@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: #ffffff;
 }
 
 body {
@@ -11,68 +12,168 @@ body {
     min-height: 100vh;
 }
 
-header {
-    width: 100%;
-    max-width: 1280px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    padding: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
 .container {
     display: flex;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding-top: 20px;
+    
+    
 }
+.btn1 {
+    color: #ffffff;
+    background-color: #4d4d4d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
 
 .bod {
     flex: 1;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.bod h3 {
-    font-size: 15px;
-}
-
-.bod h1 {
-    font-size: 50px;
-}
-
-.bod button {
-    width: 110px;
+.btnContato1, .btnContato2{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
     color: white;
-    height: 6%;
+    background-color: #781d2f;
+    border: none;
     border-radius: 5px;
-    margin-top: 50px;
-    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    font-family: 'Arial', sans-serif;
+
+}
+
+
+.btnContato1:hover {
+    background-color: #0056b3;
+}
+
+
+.txt-animado{
+    font-size: 10px;
+    font-family: "Bebas Neue", serif;
+
+}
+
+.txt-animado span{
+    position: relative;
+    font-size: 30px;
+}
+
+.txt-animado span::before{
+    content: "";
+    color: #353535;
+    animation: palavras 35s infinite;
+}
+
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #353535;
+    right: -10px;
+    animation: cursor .8s infinite, digita 35s steps(25) infinite;
+    width: calc(100% + 12px);
+    background-color: #ffffff;
+}
+
+@keyframes digita {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 12px);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid #ffffff;
+
+    }
+    
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "HELLO, MY NAME IS PAULO";
+    }
+    21%,40%{
+        content: "NICE TO MEET YOU";
+    }
+    41%,60%{
+        content: "WELCOME FOR MY WEBSITE";
+    }
+    61%,80%{
+        content: "WHAT DO YOU SEARCH HERE?";
+    }
+    81%,100%{
+        content: "THANKS, COME BACK ";
+    }
 }
 
 img {
     flex: 1;
-    max-width: 100%;
-    height: 100vh; /* Ajusta a altura da imagem */
-    object-fit: cover;
-    
+    width: auto;         /* Permite que a largura se ajuste automaticamente */
+    max-width: 100%;     /* Impede que a largura ultrapasse o contêiner */
+    height: auto;        /* Mantém a proporção da imagem */
+    max-height: 637px;   /* Limita a altura máxima da imagem */
+    object-fit: cover;   /* Ajusta a imagem sem distorção */
+}
+
+/* Oculta o botão de menu hambúrguer em telas grandes */
+.menu-toggle {
+    display: none;
+    background-color: #4d4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilo padrão do menu */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 1320px) {
+  
+
+    .container{
+        flex-direction: column-reverse;
+        margin-left: 50px;
+    }
+    .btnContato2{
+       margin-right: 30px;
+    }
 }

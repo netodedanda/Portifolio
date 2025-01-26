@@ -1,0 +1,24 @@
+.sobre {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobre h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #781d2f;
+}
+
+.sobre p {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
