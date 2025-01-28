@@ -1,13 +1,15 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
+/* Estilo do Cabeçalho */
 header {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
 .container1 {
@@ -19,58 +21,127 @@ header {
     margin-top: 1%;
 }
 
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-    font-family: "Bebas Neue", serif;
-    color: #353535;
+header nav ul {
+    list-style-type: none;
 }
 
-nav ul {
-    list-style-type: none;
+nav.menu ul {
+    list-style: none;
     display: flex;
+    gap: 20px;
     margin: 0;
     padding: 0;
-    gap: 20px;
-    flex: 1;
     justify-content: center;
 }
 
-nav li {
-    padding: 10px 0;
+nav.menu ul li {
+    display: inline-block;
+    padding: 0 40px;
 }
 
-a {
+nav.menu ul li a {
+    font-family: 'Arial', sans-serif;
     text-decoration: none;
     color: #353535;
     font-size: 1rem;
+    transition: color 0.3s;
+    padding: 10px 0;
 }
 
-nav ul li a {
-    font-family: 'Arial', sans-serif;
+nav.menu ul li a:hover {
+    color: #51ff00;
+    transform: scale(1.05);
 }
 
-a:hover {
-    color: #781d2f;
+.menu-mobile{
+    display: none;
+}
+.btn-abrirlista i{
+    display: none;
 }
 
-.btnContato1 {
-    color: #ffffff;
-    background-color: #781d2f;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 20px;
-    padding: 10px;
-}
 
-/* Responsividade */
+/* Menu Mobile */
 @media screen and (max-width: 1320px) {
-    nav.menu ul, a.btnContato1 {
-        display: none; 
+    .menu {
+        display: none;
     }
 
-    .container{
-        flex-direction: column;
+    .btnContato1 a{
+        display: none;
+    }
+
+    .btn-abrirlista i {
+        display: block;
+        color: red;
+        font-size: 40px;
+        cursor: pointer;
+        margin-left: auto;
+        display: block;
+    }
+
+    .menu-mobile {
+        display: block;
+        background-color: #842121;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        list-style: none;
+        overflow: hidden;
+        width: 0%;
+        transition: .5s;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 60%;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 88888;
+        display: none; /* Overlay oculta por padrão */
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .overlay.ativo {
+        display: block; /* Overlay visível quando ativo */
+        opacity: 1;
+    }
+
+    .menu-mobile nav ul {
+        padding: 0;
+        text-align: right;
+    }
+
+    .menu-mobile nav ul li a {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 300;
+        padding: 20px 6%;
+        display: block;
+        text-decoration: none;
+    }
+
+    .menu-mobile nav ul li a:hover {
+        background-color: rgb(68, 68, 77);
+        color: #000;
+    }
+
+    .menu-mobile .btnfechar i {
+        color: #fff;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    .menu-mobile .btnfechar {
+        padding: 20px 5%;
     }
 }

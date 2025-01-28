@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #ffffff;
 }
 
 body {
@@ -17,9 +16,10 @@ body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    
-    
+
+
 }
+
 .btn1 {
     color: #ffffff;
     background-color: #4d4d4d;
@@ -39,7 +39,8 @@ body {
     justify-content: center;
 }
 
-.btnContato1, .btnContato2{
+.btnContato1,
+.btnContato2 {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1rem;
@@ -62,24 +63,24 @@ body {
 }
 
 
-.txt-animado{
+.txt-animado {
     font-size: 10px;
     font-family: "Bebas Neue", serif;
 
 }
 
-.txt-animado span{
+.txt-animado span {
     position: relative;
     font-size: 30px;
 }
 
-.txt-animado span::before{
+.txt-animado span::before {
     content: "";
     color: #353535;
     animation: palavras 35s infinite;
 }
 
-.txt-animado span::after{
+.txt-animado span::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -91,89 +92,117 @@ body {
 }
 
 @keyframes digita {
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
         width: 0;
     }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: calc(100% + 12px);
     }
 }
 
 @keyframes cursor {
-    0%{
+    0% {
         border-left: 2px solid #ffffff;
 
     }
-    
+
 }
 
 @keyframes palavras {
-    0%,20%{
+
+    0%,
+    20% {
         content: "HELLO, MY NAME IS PAULO";
     }
-    21%,40%{
+
+    21%,
+    40% {
         content: "NICE TO MEET YOU";
     }
-    41%,60%{
+
+    41%,
+    60% {
         content: "WELCOME FOR MY WEBSITE";
     }
-    61%,80%{
+
+    61%,
+    80% {
         content: "WHAT DO YOU SEARCH HERE?";
     }
-    81%,100%{
+
+    81%,
+    100% {
         content: "THANKS, COME BACK ";
     }
 }
 
 img {
     flex: 1;
-    width: auto;         /* Permite que a largura se ajuste automaticamente */
-    max-width: 100%;     /* Impede que a largura ultrapasse o contêiner */
-    height: auto;        /* Mantém a proporção da imagem */
-    max-height: 637px;   /* Limita a altura máxima da imagem */
-    object-fit: cover;   /* Ajusta a imagem sem distorção */
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 637px;
+    object-fit: cover;
 }
 
-/* Oculta o botão de menu hambúrguer em telas grandes */
-.menu-toggle {
-    display: none;
-    background-color: #4d4d4d;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Estilo padrão do menu */
-.menu {
-    display: flex;
-    gap: 20px;
-}
-
-.menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #4d4d4d;
-    font-size: 1rem;
-}
 
 
 @media screen and (max-width: 1320px) {
-  
-
-    .container{
+    .container {
         flex-direction: column-reverse;
-        margin-left: 50px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
     }
-    .btnContato2{
-       margin-right: 30px;
+
+    .txt-animado {
+        display: flex;
+        justify-content: center;
     }
+
+    .btninicio {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .eu {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .btninicio:last-child {
+        margin-right: 0;
+    }
+
+    .btncentral {
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .btnContato1{
+        display: none;
+    }
+    
 }
