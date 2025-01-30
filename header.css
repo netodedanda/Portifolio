@@ -62,7 +62,7 @@ nav.menu ul li a:hover {
 
 
 /* Menu Mobile */
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1280px) {
     .menu {
         display: none;
     }
