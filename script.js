@@ -17,3 +17,13 @@ overlay.addEventListener('click', () => {
     menu.classList.remove('abrir-menu');
     overlay.classList.remove('ativo');
 });
+
+
+function baixarCV() {
+    const link = document.createElement("a");
+    link.href = "curriculo.pdf";
+    link.download = "curriculo.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
