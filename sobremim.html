@@ -1,59 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./sobremim.css">
+    <title>Sobre Mim</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./header.css">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sobremim.css">
+
 </head>
 
 <body>
     <header>
         <div class="container1">
-            <h1>Paulo Neto</h1>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">INICIO</a></li>
-                    <li><a href="./sobremim.html">SOBRE MIM</a></li>
-                    <li><a href="./projetos.html">PROJETOS</a></li>
-                    <li><a href="./contato.html">EXTRA</a></li>
+            <h1 class="logo">PAULO NETO</h1>
+            <nav class="menu">
+                <ul >
+                    <li class="menu-item"><a href="./index.html">INICIO</a></li>
+                    <li class="menu-item"><a href="./sobremim.html">SOBRE MIM</a></li>
+                    <li class="menu-item"><a href="./projetos.html">PROJETOS</a></li>
+                    <li class="menu-item"><a href="./contato.html">CONTATO</a></li>
                 </ul>
             </nav>
             <a href="contato.html" class="btnContato1">CONTATO</a>
         </div>
-    </header>
+        
+        <div class="btn-abrirlista" id="btnabrir">
+            <i class="bi bi-list"></i>
+        </div>
+
+    <div class="menu-mobile" id="menu-mobile">
+        <div class="btnfechar">
+            <i class="bi bi-x-lg"></i>
+        </div>
+
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./sobremim.html">SOBRE MIM</a></li>
+                <li><a href="./projetos.html">PROJETOS</a></li>
+                <li><a href="./contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    
+
+</header>
+
+<div class="overlay"></div> <!-- Overlay -->
 
     <div class="container">
         <div class="sobre">
             <h1>Sobre Mim</h1>
             <p>
-                Olá, meu nome é Paulo Neto! Nasci em 30 de setembro de 1999, na cidade de João Pessoa - PB. 
-                Sou solteiro, pai de um menino de 4 anos, e tenho o sonho de construir uma carreira sólida como programador Web. 
-                Atualmente, trabalho na área de Suporte Técnico, onde lido diariamente com tecnologias como bancos de dados, 
+                Olá, meu nome é Paulo Neto! Nasci em 30 de setembro de 1999, na cidade de João Pessoa - PB.
+                Sou solteiro, pai de um menino de 4 anos, e tenho o sonho de construir uma carreira sólida como
+                programador Web.
+                Atualmente, trabalho na área de Suporte Técnico, onde lido diariamente com tecnologias como bancos de
+                dados,
                 Linux e ferramentas de monitoramento, como Splunk, ThousandEyes e ARPS.
             </p>
             <p>
-                Sempre me considerei uma pessoa alegre e de bom humor, adorando contar piadas para tornar o ambiente mais leve. 
-                Por onde passei, fiz questão de manter boas relações e deixar lembranças positivas. Minha trajetória profissional 
+                Sempre me considerei uma pessoa alegre e de bom humor, adorando contar piadas para tornar o ambiente
+                mais leve.
+                Por onde passei, fiz questão de manter boas relações e deixar lembranças positivas. Minha trajetória
+                profissional
                 é marcada por experiências diversas, que me ajudaram a crescer como pessoa e profissional.
             </p>
             <p>
-                Já trabalhei em uma fábrica de bolo de rolo, em lanchonetes onde atuei como atendente, preparava pedidos e realizava 
-                entregas, e em uma loja de calçados como vendedor. Tive uma passagem pelo Magazine Luiza, na área de estoque, onde 
-                cuidava da separação de pedidos. Trabalhei também em uma usina de açúcar, inicialmente recepcionando caminhões 
-                carregados com cana-de-açúcar, e posteriormente, em uma terceirizada na mesma usina, na área de mecânica, participando diretamente
+                Já trabalhei em uma fábrica de bolo de rolo, em lanchonetes onde atuei como atendente, preparava pedidos
+                e realizava
+                entregas, e em uma loja de calçados como vendedor. Tive uma passagem pelo Magazine Luiza, na área de
+                estoque, onde
+                cuidava da separação de pedidos. Trabalhei também em uma usina de açúcar, inicialmente recepcionando
+                caminhões
+                carregados com cana-de-açúcar, e posteriormente, em uma terceirizada na mesma usina, na área de
+                mecânica, participando diretamente
                 da montagem da Peneira Molecular.
             </p>
             <p>
-                Minha jornada na área de TI começou com o meu primeiro emprego na área de suporte técnico, onde aprendi e cresci 
-                profissionalmente. Hoje, busco dar continuidade a essa trajetória, aprimorando minhas habilidades e conhecimentos para 
+                Minha jornada na área de TI começou com o meu primeiro emprego na área de suporte técnico, onde aprendi
+                e cresci
+                profissionalmente. Hoje, busco dar continuidade a essa trajetória, aprimorando minhas habilidades e
+                conhecimentos para
                 alcançar meu objetivo de me tornar um programador de excelência.
             </p>
         </div>
     </div>
-    
+    <script src="script.js"></script>
+
 </body>
 
 </html>

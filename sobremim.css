@@ -22,3 +22,11 @@
     margin-bottom: 15px;
     font-size: 1.1rem;
 }
+
+@media screen and (max-width: 1320px) {
+
+    body{
+        margin: 20px;
+        background-color: #333333;
+    }
+}

@@ -73,7 +73,7 @@ nav.menu ul li a:hover {
 
     .btn-abrirlista i {
         display: block;
-        color: red;
+        color: #641313;
         font-size: 40px;
         cursor: pointer;
         margin-left: auto;
@@ -82,7 +82,7 @@ nav.menu ul li a:hover {
 
     .menu-mobile {
         display: block;
-        background-color: #842121;
+        background-color: #641313;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -106,13 +106,13 @@ nav.menu ul li a:hover {
         top: 0;
         left: 0;
         z-index: 88888;
-        display: none; /* Overlay oculta por padrão */
+        display: none; 
         opacity: 0;
         transition: opacity 0.5s ease;
     }
 
     .overlay.ativo {
-        display: block; /* Overlay visível quando ativo */
+        display: block; 
         opacity: 1;
     }
 
@@ -131,8 +131,8 @@ nav.menu ul li a:hover {
     }
 
     .menu-mobile nav ul li a:hover {
-        background-color: rgb(68, 68, 77);
-        color: #000;
+        background-color: #ffffff;
+        color: #000000;
     }
 
     .menu-mobile .btnfechar i {
@@ -144,4 +144,15 @@ nav.menu ul li a:hover {
     .menu-mobile .btnfechar {
         padding: 20px 5%;
     }
+    body{
+        background-image: url(./img//bk2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .logo{
+        margin-left: 100px;
+    }
+
 }
