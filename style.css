@@ -159,8 +159,8 @@ img {
     flex: 1;
     width: auto;
     max-width: 100%;
+    max-height: 92vh;
     height: auto;
-    max-height: 610px;
     object-fit: cover;
 }
 
